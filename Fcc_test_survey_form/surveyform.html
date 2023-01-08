@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title></title>
+<link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+    <h1 id="title">Survey Form</h1>
+    <p id="description"> Please Fill up the Form
+    </p>
+    <hr>
+    </header>
+    <main>
+      <section>
+    <form id="survey-form">
+      <label id="name-label">Full Name :
+      <input type="text" id="name"    placeholder="Enter your fullname"required/>
+      </label><br><hr>
+      <label id="email-label">Email :
+      <input type="email" id="email" placeholder="Enter your email id" required/>
+      </label><br><hr>
+        <label id="number-label">Age :
+      <input type="number" id="number" min="12" max="50" placeholder="Age"/>
+      </label><br><hr>
+<label for="dropdown">What is your Occupation?
+  <select id="dropdown"> 
+       <option value="student" >Student</option>
+       <option value="gemployee">Govt. Employee</option>
+       </select><hr>
+        
+        
+       </label>
+       <label>Do you wnat to live in Bangladesh?
+         <input type="radio" name="choice" value="yes">Yes
+         <input type="radio" name="choice" value="no">No
+         </label><hr>
+         
+<div>
+         <label>What Improvements you want to see in the future in Bangladesh?</label><br>
+         <input type="checkbox" value="traffic">Good Traffic Circulation <br>
+  <input type="checkbox" value="road">Wided Road<br>
+    <input type="checkbox" value="drainage">Proper drainage System <br><hr>
+
+    <label id="#survey-form">Message:</label><br>
+    <textarea rows="5" cols="30"></textarea>
+           
+</div><hr>
+<button id="submit">Submit</button> 
+</section><hr>
+      </form>
+
+    </main>
+    </body>
+
+
+
+  </html>

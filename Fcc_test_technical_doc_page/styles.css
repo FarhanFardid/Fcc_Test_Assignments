@@ -1,0 +1,134 @@
+div.main-body{
+  display:grid;
+    background-color:aqua;
+  border:3px solid black;
+  grid-template-columns:minmax(300px , auto) 1fr;
+  grid-template-areas: "navbar maincontent"
+  
+}
+
+nav>header{
+  color:red;
+  font-size:25px;
+  text-align:center;
+  border-bottom:3px solid black;
+  padding-left:10px;
+
+}
+
+
+#main-doc{
+  margin: 3px;
+  padding:5px;
+  grid-area:maincontent;
+
+}
+#navbar{
+  padding:3px;
+  margin:5px;
+  grid-area: navbar;
+  position:fixed;
+  top:0;
+  left:0;
+
+  
+
+}
+#navbar .nav-link{
+  text-decoration:none;
+  border-bottom:1px solid black;
+  font-size:1.3rem;
+
+}
+#main-doc{
+  border-left:2px solid red;
+}
+
+#Introduction header{
+  font-size:1.6rem;
+  color:Green;
+  text-decoration:underline;
+  padding:2px;
+}
+
+#Introduction ul li{
+  padding-left: 15px;
+  clear:left;
+   
+
+}
+
+
+.main-section  p{
+  font-size:20px;
+  padding:8px;
+  margin:2px auto;
+}
+.main-section code{
+  font-size: 15px;
+  color:red;
+  margin: 3px 5px;
+  padding:7px;
+}
+
+#JavaScript_and_Java header{
+    font-size:1.6rem;
+  color:Green;
+  text-decoration:underline;
+  padding:2px;
+
+}
+#Hello_world header{
+  font-size:1.6rem;
+  color:Green;
+  text-decoration:underline;
+  padding:2px;
+
+}
+
+#Declaring_variables header{
+  font-size:1.6rem;
+  color:Green;
+  text-decoration:underline;
+  padding:2px;
+
+}
+
+#Function_declarations header{
+  font-size:1.6rem;
+  color:Green;
+  text-decoration:underline;
+  padding:2px;
+
+}
+
+.main-section ul li{
+  color:#1E4D13;
+  font-size:1.1rem;
+  
+  }
+  
+@media(max-width:500px)
+{
+  div.main-body{
+
+  background-color: aquamarine;
+    
+}
+#navbar{
+  width:100%;
+  height:200vh;
+  padding:3px;
+  margin:5px;
+  overflow:scroll;
+  
+  
+}
+#main-doc section{
+  
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  flex-overflow:scroll;
+ 
+}
